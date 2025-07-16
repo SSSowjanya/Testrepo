@@ -1,5 +1,5 @@
-import { StringColumn, Table } from '@servicenow/sdk/core';
-import '@servicenow/sdk/global';
+import { StringColumn, Table } from '@servicenow/sdk/core'
+import '@servicenow/sdk/global'
 
 //creates todo table, with three columns (deadline, status and task)
 export const x_1436243_ideunive_test = Table({
@@ -13,14 +13,14 @@ export const x_1436243_ideunive_test = Table({
 })
 //insert a record
 
-import { Record } from '@servicenow/sdk/core';
+import { Record } from '@servicenow/sdk/core'
 
 export const ideuni1 = Record({
-  $id: Now.ID['ideuni-1'],
-  table: 'x_1436243_ideunive_test',
-  data: {
-    active: 'true',
-    escalation: '1435',
-    description: 'Unable to send or receive emails.',
-  }
+    $id: Now.ID['ideuni-1'],
+    table: 'x_1436243_ideunive_test',
+    data: {
+        active: 'true',
+        escalation: '1435',
+        description: 'Unable to send or receive emails.',
+    },
 })
