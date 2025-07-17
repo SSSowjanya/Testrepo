@@ -1,6 +1,6 @@
-import { StringColumn, Table } from '@servicenow/sdk/core'
+import { StringColumn, Table, BusinessRule} from '@servicenow/sdk/core'
 import '@servicenow/sdk/global'
-
+import { showStateUpdate } from '../server/script.js'
 //creates todo table, with three columns (deadline, status and task)
 export const x_1436243_ideunive_test = Table({
     name: 'x_1436243_ideunive_test',
@@ -23,4 +23,20 @@ export const ideuni1 = Record({
         escalation: '1435',
         description: 'Unable to send or receive emails.',
     },
+})
+
+
+//create a business rule
+
+BusinessRule({
+    name: 'testbr',
+    table: 'x_1436243_ideunive_test',
+    when: 'after',
+    action: ['update', 'delete', 'insert'],
+    script: showStateUpdate,
+    order: 100,
+    active: true,
+    add_message: false,
+    abort_action: false,
+    $id: Now.ID['br0'],
 })
