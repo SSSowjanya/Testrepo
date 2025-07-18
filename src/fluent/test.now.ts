@@ -1,6 +1,7 @@
-import { StringColumn, Table, BusinessRule} from '@servicenow/sdk/core'
+import { BusinessRule, StringColumn, Table } from '@servicenow/sdk/core'
 import '@servicenow/sdk/global'
 import { showStateUpdate } from '../server/script.js'
+
 //creates todo table, with three columns (deadline, status and task)
 export const x_1436243_ideunive_test = Table({
     name: 'x_1436243_ideunive_test',
@@ -32,11 +33,11 @@ BusinessRule({
     name: 'testbr',
     table: 'x_1436243_ideunive_test',
     when: 'after',
-    action: ['update', 'delete', 'insert'],
+    action: ["update","delete"],
     script: showStateUpdate,
     order: 100,
     active: true,
     add_message: false,
     abort_action: false,
-    $id: Now.ID['br0'],
+    $id: Now.ID['br1'],
 })
