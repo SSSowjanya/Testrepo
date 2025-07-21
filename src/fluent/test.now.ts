@@ -33,7 +33,7 @@ BusinessRule({
     name: 'testbr',
     table: 'x_1436243_ideunive_test',
     when: 'after',
-    action: ["delete","insert"],
+    action: ["delete","insert","update"],
     script: showStateUpdate,
     order: 100,
     active: true,
