@@ -1,0 +1,11 @@
+import { Table } from "@servicenow/sdk/core";
+
+export const x_1751837_universe = Table({
+    name: 'x_1751837_universe',
+    label: 'Myrequest',
+    extends: 'task',
+    schema: {
+        status: StringColumn({ label: 'Status' }),
+    },
+
+        })
