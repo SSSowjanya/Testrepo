@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Ideunive Test" language="en" table="x_1436243_ideunive_test">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Ideunive Test</label>
+            <language>en</language>
+            <name>x_1436243_ideunive_test</name>
+            <plural>Ideunive Tests</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-16 05:00:20</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Ideunive Test</sys_name>
+            <sys_package display_value="IDEUniverse" source="x_1436243_ideunive">a5e4a289473aae104f947212d16d432e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="IDEUniverse">a5e4a289473aae104f947212d16d432e</sys_scope>
+            <sys_update_name>sys_documentation_x_1436243_ideunive_test__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-16 05:00:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

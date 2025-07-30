@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ffceae49473aae104f947212d16d43a4" extends="task" label="Ideunive Test" max_length="40" name="x_1436243_ideunive_test" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
+    </element>
+</database>
